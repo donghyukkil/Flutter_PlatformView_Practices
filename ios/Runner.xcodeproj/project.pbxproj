@@ -14,6 +14,14 @@
 		97C146FC1CF9000F007C117D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FA1CF9000F007C117D /* Main.storyboard */; };
 		97C146FE1CF9000F007C117D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FD1CF9000F007C117D /* Assets.xcassets */; };
 		97C147011CF9000F007C117D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */; };
+		C7F85E9D2CC6358C00C0E33F /* MapKitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85E9C2CC6358C00C0E33F /* MapKitView.swift */; };
+		C7F85EA02CC638C400C0E33F /* MapKitViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85E9F2CC638C400C0E33F /* MapKitViewFactory.swift */; };
+		C7F85EA32CC639D000C0E33F /* MethodChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EA22CC639D000C0E33F /* MethodChannels.swift */; };
+		C7F85EA62CC63B0400C0E33F /* DeviceInfoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EA52CC63B0400C0E33F /* DeviceInfoHelper.swift */; };
+		C7F85EA82CC63C0900C0E33F /* MessageChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EA72CC63C0900C0E33F /* MessageChannels.swift */; };
+		C7F85EAA2CC63C2600C0E33F /* EventChannels.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EA92CC63C2600C0E33F /* EventChannels.swift */; };
+		C7F85EAC2CC63C4A00C0E33F /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EAB2CC63C4A00C0E33F /* LocationManager.swift */; };
+		C7F85EAF2CC645A700C0E33F /* BinaryMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7F85EAE2CC645A700C0E33F /* BinaryMessageHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +63,14 @@
 		97C146FD1CF9000F007C117D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97C147001CF9000F007C117D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		97C147021CF9000F007C117D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C7F85E9C2CC6358C00C0E33F /* MapKitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitView.swift; sourceTree = "<group>"; };
+		C7F85E9F2CC638C400C0E33F /* MapKitViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapKitViewFactory.swift; sourceTree = "<group>"; };
+		C7F85EA22CC639D000C0E33F /* MethodChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MethodChannels.swift; sourceTree = "<group>"; };
+		C7F85EA52CC63B0400C0E33F /* DeviceInfoHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoHelper.swift; sourceTree = "<group>"; };
+		C7F85EA72CC63C0900C0E33F /* MessageChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageChannels.swift; sourceTree = "<group>"; };
+		C7F85EA92CC63C2600C0E33F /* EventChannels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventChannels.swift; sourceTree = "<group>"; };
+		C7F85EAB2CC63C4A00C0E33F /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		C7F85EAE2CC645A700C0E33F /* BinaryMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryMessageHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +125,8 @@
 		97C146F01CF9000F007C117D /* Runner */ = {
 			isa = PBXGroup;
 			children = (
-				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				C7F85EA42CC63AF400C0E33F /* Utils */,
+				C7F85E9B2CC6357800C0E33F /* PlatformChannel */,
 				97C146FD1CF9000F007C117D /* Assets.xcassets */,
 				97C146FF1CF9000F007C117D /* LaunchScreen.storyboard */,
 				97C147021CF9000F007C117D /* Info.plist */,
@@ -119,6 +136,45 @@
 				74858FAD1ED2DC5600515810 /* Runner-Bridging-Header.h */,
 			);
 			path = Runner;
+			sourceTree = "<group>";
+		};
+		C7F85E9B2CC6357800C0E33F /* PlatformChannel */ = {
+			isa = PBXGroup;
+			children = (
+				C7F85EA12CC639C100C0E33F /* Channels */,
+				C7F85E9E2CC6364900C0E33F /* Mapkit */,
+				97C146FA1CF9000F007C117D /* Main.storyboard */,
+				C7F85EAE2CC645A700C0E33F /* BinaryMessageHandler.swift */,
+			);
+			path = PlatformChannel;
+			sourceTree = "<group>";
+		};
+		C7F85E9E2CC6364900C0E33F /* Mapkit */ = {
+			isa = PBXGroup;
+			children = (
+				C7F85E9C2CC6358C00C0E33F /* MapKitView.swift */,
+				C7F85E9F2CC638C400C0E33F /* MapKitViewFactory.swift */,
+			);
+			path = Mapkit;
+			sourceTree = "<group>";
+		};
+		C7F85EA12CC639C100C0E33F /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				C7F85EA22CC639D000C0E33F /* MethodChannels.swift */,
+				C7F85EA72CC63C0900C0E33F /* MessageChannels.swift */,
+				C7F85EA92CC63C2600C0E33F /* EventChannels.swift */,
+			);
+			path = Channels;
+			sourceTree = "<group>";
+		};
+		C7F85EA42CC63AF400C0E33F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C7F85EA52CC63B0400C0E33F /* DeviceInfoHelper.swift */,
+				C7F85EAB2CC63C4A00C0E33F /* LocationManager.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,8 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C7F85E9D2CC6358C00C0E33F /* MapKitView.swift in Sources */,
+				C7F85EA82CC63C0900C0E33F /* MessageChannels.swift in Sources */,
+				C7F85EA62CC63B0400C0E33F /* DeviceInfoHelper.swift in Sources */,
+				C7F85EAF2CC645A700C0E33F /* BinaryMessageHandler.swift in Sources */,
 				74858FAF1ED2DC5600515810 /* AppDelegate.swift in Sources */,
+				C7F85EAA2CC63C2600C0E33F /* EventChannels.swift in Sources */,
 				1498D2341E8E89220040F4C2 /* GeneratedPluginRegistrant.m in Sources */,
+				C7F85EA32CC639D000C0E33F /* MethodChannels.swift in Sources */,
+				C7F85EA02CC638C400C0E33F /* MapKitViewFactory.swift in Sources */,
+				C7F85EAC2CC63C4A00C0E33F /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

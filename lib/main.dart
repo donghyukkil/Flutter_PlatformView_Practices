@@ -224,7 +224,7 @@ class _PlatformChannelState extends State<PlatformChannel> {
                   Expanded(
                       child: ClipRRect(
                     borderRadius: BorderRadius.circular(20),
-                    child: MapKitView(),
+                    child: const MapKitView(),
                   ))
                 ],
               ),
