@@ -1,4 +1,4 @@
-# GrowingTales
+# PlatformChannel Practices
 
 ## 프로젝트 설명
 
@@ -15,7 +15,8 @@ Platform Channel을 이용한 Flutter <-> Native(ios) 커뮤니케이션을 실�
 ## 기술스택
 
 - Mobile:
-    - Dart, Flutter, Swift.
+    - Dart, Flutter
+    - Swift
 
 <br>
 
